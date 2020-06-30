@@ -6,10 +6,10 @@ import (
 )
 
 type Rank struct {
-	WorldRank   int    `json:"world_rank"`
-	CountryCode string `json:"country_code"`
-	CountryName string `json:"country_name"`
-	CountryRank int    `json:"country_rank"`
+	WorldRank   int    `json:"world_rank"`   //The domain rank in the world
+	CountryCode string `json:"country_code"` //The country (code) to which the domain name belongs
+	CountryName string `json:"country_name"` //The country (name) to which the domain name belongs
+	CountryRank int    `json:"country_rank"` //The domain rank in this country
 }
 
 func (r *Rank) String() string {
